@@ -32,8 +32,8 @@ jobs:
           curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
           php phpcs.phar --version
 
-      - uses: tinovyatkin/action-php-codesniffer@v1
+      - uses: ./
         with:
           files: "**.php" # you may customize glob as needed
           phpcs_path: php phpcs.phar
-          standard: '__tests__/phpcs.xml'
+          standard: 'tests/phpcs.xml'
