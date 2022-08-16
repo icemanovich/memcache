@@ -1,0 +1,30 @@
+{
+  "name": "icemanovich/memcache",
+  "description": "Memcache driver example",
+  "keywords": [
+    "memcache",
+    "driver",
+    "php",
+    "transport"
+  ],
+  "license": "proprietary",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "ext-pcntl": "*",
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  }
+}
