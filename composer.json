@@ -11,7 +11,15 @@
   "autoload": {
     "classmap": [
       "src/"
-    ]
+    ],
+    "psr-4": {
+      "Memcache\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Memcache\\Tests\\": "tests/"
+    }
   },
   "require": {
     "php": "^7.4",
