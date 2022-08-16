@@ -12,7 +12,8 @@ class ClientTest extends TestCase
     public function testConnect()
     {
         // todo :: credentials should be passed from .env
-        $client = new Client('127.0.0.1', '11211');
+        // from docker container
+        $client = new Client('memcached', '11211');
 
         $key     = "key";
         $message = "Hello world!!!";
