@@ -1,5 +1,4 @@
 FROM php:7.4-fpm
-#FROM php:7.4-cli
 
 MAINTAINER i.kupriyanov@petrosoftinc.com
 
@@ -9,7 +8,7 @@ ADD . /var/www/service
 
 
 RUN apt update && apt install --assume-yes --quiet htop mc zip iputils-ping telnet && \
-    docker-php-ext-install pcntl && \
+    docker-php-ext-install pcntl sockets && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 
