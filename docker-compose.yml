@@ -13,10 +13,10 @@ services:
 
   memcached:
     image: 'bitnami/memcached:latest'
-    ports:
-      - "11211:11211"
-    expose:
-      - "11211"
+#    ports:
+#      - "11211:11211"
+#    expose:
+#      - "11211"
     networks:
       - mem
 
